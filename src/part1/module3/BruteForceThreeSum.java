@@ -2,13 +2,17 @@ package part1.module3;
 
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.Stopwatch;
 
 public class BruteForceThreeSum {
 
     public static void main(String[] args) {
-        // In.readInts returns an int[] array containing all integers from that file
+        // In.readInts returns an int[] array containing all integers from resources/numbers.txt
         int[] a = In.readInts(args[0]);
+        Stopwatch stopwatch = new Stopwatch();
         StdOut.println(count(a));
+        double time = stopwatch.elapsedTime();
+        StdOut.println("Time: " + time + " seconds");
     }
 
     public static int count(int[] a) {
