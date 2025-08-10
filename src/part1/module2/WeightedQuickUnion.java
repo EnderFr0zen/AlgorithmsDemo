@@ -1,6 +1,7 @@
 package part1.module2;
 
 public class WeightedQuickUnion {
+
     // parent link (site indexed)
     private int[] id;
     // size of component for roots (site indexed)
