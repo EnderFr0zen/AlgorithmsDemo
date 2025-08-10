@@ -2,11 +2,15 @@ package part1.module3;
 
 import edu.princeton.cs.algs4.In;
 
+import java.util.Arrays;
+
 public class BinarySearch {
 
     public static void main(String[] args) {
         // In.readInts returns an int[] array containing all integers from resources/numbers.txt
         int[] a = In.readInts(args[0]);
+        // Sort the array so that we can use binary search
+        Arrays.sort(a);
         // The value we want to search for in the array
         int key = 7;
         // Call the binary search method to find 'key' in array 'a'
