@@ -16,5 +16,4 @@ public class RandomWord {
         }
         System.out.println(champion);
     }
-
 }
