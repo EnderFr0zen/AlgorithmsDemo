@@ -15,6 +15,7 @@ public class BruteForceThreeSum {
         StdOut.println("Time: " + time + " seconds");
     }
 
+    // Counts the number of index triples (i, j, k) with i < j < k and a[i] + a[j] + a[k] == 0
     public static int count(int[] a) {
         // Store the number of elements in the array
         int N = a.length;
