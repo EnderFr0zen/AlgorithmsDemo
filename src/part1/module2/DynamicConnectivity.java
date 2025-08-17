@@ -1,6 +1,7 @@
 package part1.module2;
 
 import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.UF;
 
 public class DynamicConnectivity {
@@ -20,7 +21,7 @@ public class DynamicConnectivity {
                 // Connect p and q
                 unionFind.union(p, q);
                 // Print the connection that was just made
-                System.out.println(p + " " + q);
+                StdOut.println(p + " " + q);
             }
         }
     }

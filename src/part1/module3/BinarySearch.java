@@ -1,6 +1,7 @@
 package part1.module3;
 
 import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdOut;
 
 import java.util.Arrays;
 
@@ -18,10 +19,10 @@ public class BinarySearch {
 
         if (index != -1) {
             // If index is not -1, the key was found at that position
-            System.out.println("Found " + key + " at index " + index);
+            StdOut.println("Found " + key + " at index " + index);
         } else {
             // If index is -1, the key was not found
-            System.out.println(key + " not found.");
+            StdOut.println(key + " not found.");
         }
     }
 

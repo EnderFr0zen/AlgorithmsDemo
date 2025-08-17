@@ -1,5 +1,6 @@
 package part1.module2;
 
+import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.Stopwatch;
 
 import java.util.Random;
@@ -24,7 +25,7 @@ public class UnionFindBenchmark {
             }
         }
         double time1 = timer1.elapsedTime();
-        System.out.println("QuickFind time: " + time1 + " seconds");
+        StdOut.println("QuickFind time: " + time1 + " seconds");
 
         // QuickUnion benchmark
         QuickUnion qu = new QuickUnion(N);
@@ -37,7 +38,7 @@ public class UnionFindBenchmark {
             }
         }
         double time2 = timer2.elapsedTime();
-        System.out.println("QuickUnion time: " + time2 + " seconds");
+        StdOut.println("QuickUnion time: " + time2 + " seconds");
 
         // WeightedQuickUnion benchmark
         WeightedQuickUnion wqu = new WeightedQuickUnion(N);
@@ -50,6 +51,6 @@ public class UnionFindBenchmark {
             }
         }
         double time3 = timer3.elapsedTime();
-        System.out.println("WeightedQuickUnion time: " + time3 + " seconds");
+        StdOut.println("WeightedQuickUnion time: " + time3 + " seconds");
     }
 }

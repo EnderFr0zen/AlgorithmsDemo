@@ -1,5 +1,6 @@
 package part1.module1;
 
+import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 public class RandomWord {
@@ -14,6 +15,6 @@ public class RandomWord {
                 champion = word;
             }
         }
-        System.out.println(champion);
+        StdOut.println(champion);
     }
 }

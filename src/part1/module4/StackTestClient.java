@@ -8,8 +8,9 @@ public class StackTestClient {
     public static void main(String[] args) {
 
 //        StackOfStrings stack = new StackOfStrings();
-//        StackOfStringsLinked stack = new StackOfStringsLinked();
-        FixedCapacityStackOfStrings stack = new FixedCapacityStackOfStrings(100);
+//        LinkedStackOfStrings stack = new LinkedStackOfStrings();
+//        FixedCapacityStackOfStrings stack = new FixedCapacityStackOfStrings(100);
+        ResizingArrayStackOfStrings stack = new ResizingArrayStackOfStrings();
 
         while (!StdIn.isEmpty()) {
             String s = StdIn.readString();

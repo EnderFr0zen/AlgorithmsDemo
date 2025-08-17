@@ -1,5 +1,6 @@
 package part1.module2;
 
+import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
 
@@ -15,9 +16,9 @@ public class PercolationStats {
         PercolationStats stats = new PercolationStats(n, T);
 
         // Print the results
-        System.out.printf("mean                    = %.16f%n", stats.mean());
-        System.out.printf("stddev                  = %.16f%n", stats.stddev());
-        System.out.printf("95%% confidence interval = [%.16f, %.16f]%n", stats.confidenceLo(), stats.confidenceHi());
+        StdOut.printf("mean                    = %.16f%n", stats.mean());
+        StdOut.printf("stddev                  = %.16f%n", stats.stddev());
+        StdOut.printf("95%% confidence interval = [%.16f, %.16f]%n", stats.confidenceLo(), stats.confidenceHi());
     }
 
     // Number of simulation trials

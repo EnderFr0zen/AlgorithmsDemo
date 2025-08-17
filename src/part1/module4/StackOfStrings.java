@@ -2,37 +2,37 @@ package part1.module4;
 
 public class StackOfStrings {
 
-    private final String[] items;
-    private int n;
+    private final String[] s;
+    private int N;
 
     public StackOfStrings() {
         // fixed capacity
-        items = new String[100];
-        n = 0;
+        s = new String[100];
+        N = 0;
     }
 
     public void push(String item) {
-        if (n == items.length) {
+        if (N == s.length) {
             throw new RuntimeException("Stack overflow");
         }
-        items[n++] = item;
+        s[N++] = item;
     }
 
     public String pop() {
         if (isEmpty()) {
             throw new RuntimeException("Stack underflow");
         }
-        String item = items[--n];
+        String item = s[--N];
         // avoid loitering
-        items[n] = null;
+        s[N] = null;
         return item;
     }
 
     public boolean isEmpty() {
-        return n == 0;
+        return N == 0;
     }
 
     public int size() {
-        return n;
+        return N;
     }
 }
