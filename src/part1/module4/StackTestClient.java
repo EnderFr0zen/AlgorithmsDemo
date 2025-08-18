@@ -10,7 +10,9 @@ public class StackTestClient {
 //        StackOfStrings stack = new StackOfStrings();
 //        LinkedStackOfStrings stack = new LinkedStackOfStrings();
 //        FixedCapacityStackOfStrings stack = new FixedCapacityStackOfStrings(100);
-        ResizingArrayStackOfStrings stack = new ResizingArrayStackOfStrings();
+//        ResizingArrayStackOfStrings stack = new ResizingArrayStackOfStrings();
+//        GenericLinkedStack<String> stack = new GenericLinkedStack<>();
+        GenericFixedCapacityStack<String> stack = new GenericFixedCapacityStack<>(100);
 
         while (!StdIn.isEmpty()) {
             String s = StdIn.readString();
