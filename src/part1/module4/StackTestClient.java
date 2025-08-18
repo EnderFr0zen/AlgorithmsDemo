@@ -12,7 +12,9 @@ public class StackTestClient {
 //        FixedCapacityStackOfStrings stack = new FixedCapacityStackOfStrings(100);
 //        ResizingArrayStackOfStrings stack = new ResizingArrayStackOfStrings();
 //        GenericLinkedStack<String> stack = new GenericLinkedStack<>();
-        GenericFixedCapacityStack<String> stack = new GenericFixedCapacityStack<>(100);
+//        GenericFixedCapacityStack<String> stack = new GenericFixedCapacityStack<>(100);
+//        IterableGenericLinkedStack<String> stack = new IterableGenericLinkedStack<>();
+        IterableFixedCapacityStack<String> stack = new IterableFixedCapacityStack<>(100);
 
         while (!StdIn.isEmpty()) {
             String s = StdIn.readString();
