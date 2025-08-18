@@ -1,0 +1,28 @@
+package part1.module4.lecture;
+
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+
+public class StackTestClient {
+
+    public static void main(String[] args) {
+
+//        StackOfStrings stack = new StackOfStrings();
+//        LinkedStackOfStrings stack = new LinkedStackOfStrings();
+//        FixedCapacityStackOfStrings stack = new FixedCapacityStackOfStrings(100);
+//        ResizingArrayStackOfStrings stack = new ResizingArrayStackOfStrings();
+//        GenericLinkedStack<String> stack = new GenericLinkedStack<>();
+//        GenericFixedCapacityStack<String> stack = new GenericFixedCapacityStack<>(100);
+//        IterableGenericLinkedStack<String> stack = new IterableGenericLinkedStack<>();
+        IterableFixedCapacityStack<String> stack = new IterableFixedCapacityStack<>(100);
+
+        while (!StdIn.isEmpty()) {
+            String s = StdIn.readString();
+            if (s.equals("-")) {
+                StdOut.print(stack.pop() + " ");
+            } else {
+                stack.push(s);
+            }
+        }
+    }
+}
